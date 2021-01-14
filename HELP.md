@@ -26,3 +26,8 @@ These additional references should also help you:
 
 * [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
 
+## Actuators
+* [Custom Actuator](https://springframework.guru/chuck-norris-for-spring-boot-actuator/)
+* [Actuator Code Library](https://github.com/springframeworkguru/chuck-norris-for-actuator)
+* Add Git Info (ToDo)
+* [Request List](https://courses.springframework.guru/p/ready-for-production-with-spring-boot-actuator)  (ToDo)
