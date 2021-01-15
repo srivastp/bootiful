@@ -1,4 +1,4 @@
-package com.example.bootiful.config.contributor;
+package com.example.bootiful.config.actuator;
 
 import org.springframework.boot.actuate.info.Info;
 import org.springframework.boot.actuate.info.InfoContributor;
