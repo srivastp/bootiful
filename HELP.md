@@ -29,5 +29,5 @@ These additional references should also help you:
 ## Actuators
 * [Custom Actuator](https://springframework.guru/chuck-norris-for-spring-boot-actuator/)
 * [Actuator Code Library](https://github.com/springframeworkguru/chuck-norris-for-actuator)
-* Add Git Info (ToDo)
+* [Add Git Info](https://github.com/n0mer/gradle-git-properties)
 * [Request List](https://courses.springframework.guru/p/ready-for-production-with-spring-boot-actuator)  (ToDo)

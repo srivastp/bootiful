@@ -19,11 +19,11 @@ public class CaffeineCacheAppRunner implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         logger.info(".... Fetching Articles to test Caffeine Cache");
-        logger.info("1 -->" + articleService.getArticleById(1L));
+        /*logger.info("1 -->" + articleService.getArticleById(1L));
         logger.info("2 -->" + articleService.getArticleById(2L));
         logger.info("1 -->" + articleService.getArticleById(1L));
         logger.info("2 -->" + articleService.getArticleById(2L));
-        logger.info("3 -->" + articleService.getArticleById(3L));
+        logger.info("3 -->" + articleService.getArticleById(3L));*/
     }
 
 }
