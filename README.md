@@ -1,7 +1,8 @@
 # bootiful
 Spring boot starter project
 
-### Actuators
-### Include Git Information
+### Custom Actuators - Chuck Norris :)
+### Actuator to include Git Information
 ### H2 database and console
+### Test-logger-plugin
 

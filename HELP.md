@@ -28,12 +28,15 @@ These additional references should also help you:
 
 ## Actuators
 * [Chuck Norris - Custom Actuator](https://springframework.guru/chuck-norris-for-spring-boot-actuator/) \
-compile group: 'guru.springframework', name: 'chuck-norris-for-actuator', version: '0.0.2' \
+_compile group: 'guru.springframework', name: 'chuck-norris-for-actuator', version: '0.0.2'_
 * [Chuck Norris - Actuator Code Library](https://github.com/springframeworkguru/chuck-norris-for-actuator)
 
 * [Git Details - Add Git Info](https://github.com/n0mer/gradle-git-properties) \
-**Using Plugin:** id "com.gorylenko.gradle-git-properties" version "2.2.4" \
-**Actuator Class:** TotalUsersInfoContributor
+** _Using Plugin:** id "com.gorylenko.gradle-git-properties" version "2.2.4"_ \
+** _Actuator Class:** TotalUsersInfoContributor_
+
+* [Test Logger Plugin](https://github.com/radarsh/gradle-test-logger-plugin) \
+_id 'com.adarshr.test-logger' version '2.1.1'_
 
 ##ToDO
 * [Request List](https://courses.springframework.guru/p/ready-for-production-with-spring-boot-actuator)

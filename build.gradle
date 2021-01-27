@@ -3,8 +3,8 @@ plugins {
 	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
 	id 'java'
 	id "com.gorylenko.gradle-git-properties" version "2.2.4"
+	id 'com.adarshr.test-logger' version '2.1.1'
 }
-
 
 // git.properties
 gitProperties {
@@ -30,6 +30,26 @@ bootJar {
 						'foo': "bar"
 		)
 	}
+}
+
+// Test Logger Plugin
+testlogger {
+	theme 'standard'
+	showExceptions true
+	showStackTraces true
+	showFullStackTraces false
+	showCauses true
+	slowThreshold 2000
+	showSummary true
+	showSimpleNames false
+	showPassed true
+	showSkipped true
+	showFailed true
+	showStandardStreams false
+	showPassedStandardStreams true
+	showSkippedStandardStreams true
+	showFailedStandardStreams true
+	logLevel 'lifecycle'
 }
 
 group = 'com.example'
