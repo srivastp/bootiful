@@ -27,7 +27,13 @@ These additional references should also help you:
 * [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
 
 ## Actuators
-* [Custom Actuator](https://springframework.guru/chuck-norris-for-spring-boot-actuator/)
-* [Actuator Code Library](https://github.com/springframeworkguru/chuck-norris-for-actuator)
-* [Add Git Info](https://github.com/n0mer/gradle-git-properties)
-* [Request List](https://courses.springframework.guru/p/ready-for-production-with-spring-boot-actuator)  (ToDo)
+* [Chuck Norris - Custom Actuator](https://springframework.guru/chuck-norris-for-spring-boot-actuator/) \
+compile group: 'guru.springframework', name: 'chuck-norris-for-actuator', version: '0.0.2' \
+* [Chuck Norris - Actuator Code Library](https://github.com/springframeworkguru/chuck-norris-for-actuator)
+
+* [Git Details - Add Git Info](https://github.com/n0mer/gradle-git-properties) \
+**Using Plugin:** id "com.gorylenko.gradle-git-properties" version "2.2.4" \
+**Actuator Class:** TotalUsersInfoContributor
+
+##ToDO
+* [Request List](https://courses.springframework.guru/p/ready-for-production-with-spring-boot-actuator)
