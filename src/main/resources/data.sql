@@ -1,4 +1,6 @@
-insert into Article(id, publication_date, publication_time, creation_date_time) values(1, TO_DATE('01/01/2018', 'DD/MM/YYYY'), TO_DATE('15:00', 'HH24:MI'), TO_DATE('31/12/2017 07:30', 'DD/MM/YYYY HH24:MI'));
-insert into Article(id, publication_date, publication_time, creation_date_time) values(2, TO_DATE('01/01/2018', 'DD/MM/YYYY'), TO_DATE('15:30', 'HH24:MI'), TO_DATE('15/12/2017 08:00', 'DD/MM/YYYY HH24:MI'));
-insert into Article(id, publication_date, publication_time, creation_date_time) values(3, TO_DATE('15/12/2017', 'DD/MM/YYYY'), TO_DATE('16:00', 'HH24:MI'), TO_DATE('01/12/2017 13:45', 'DD/MM/YYYY HH24:MI'));
+insert into Article(id, publication_date, publication_time, creation_date_time, title) values(1, TO_DATE('01/01/2018', 'DD/MM/YYYY'), TO_DATE('15:00', 'HH24:MI'), TO_DATE('31/12/2017 07:30', 'DD/MM/YYYY HH24:MI'), 'Lorem ipsum solos cartos');
+insert into Article(id, publication_date, publication_time, creation_date_time, title) values(2, TO_DATE('01/01/2018', 'DD/MM/YYYY'), TO_DATE('15:30', 'HH24:MI'), TO_DATE('15/12/2017 08:00', 'DD/MM/YYYY HH24:MI'), 'The Science of Reasoning With Unreasonable People');
+insert into Article(id, publication_date, publication_time, creation_date_time, title) values(3, TO_DATE('15/12/2017', 'DD/MM/YYYY'), TO_DATE('16:00', 'HH24:MI'), TO_DATE('01/12/2017 13:45', 'DD/MM/YYYY HH24:MI'), 'A Dog’s Place Is at the White House');
+insert into Article(id, publication_date, publication_time, creation_date_time, title) values(4, TO_DATE('28/02/2019', 'DD/MM/YYYY'), TO_DATE('11:00', 'HH24:MI'), TO_DATE('15/03/2018 08:00', 'DD/MM/YYYY HH24:MI'), 'U.S. Vaccination Rollout Gathers Speed, as Threat of Variants Grows');
+insert into Article(id, publication_date, publication_time, creation_date_time, title) values(5, null, null, TO_DATE('31/03/2018 11:10', 'DD/MM/YYYY HH24:MI'), 'How the Stock Market’s Relentless Rise Saved Companies');
 

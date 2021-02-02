@@ -1,5 +1,7 @@
 package com.example.bootiful.config.actuator;
 
+import com.example.bootiful.article.dao.ArticleRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.actuate.info.Info;
 import org.springframework.boot.actuate.info.InfoContributor;
 
@@ -9,17 +11,16 @@ import java.util.Map;
 //@Component
 public class TotalUsersInfoContributor implements InfoContributor {
 
-    /*@Autowired
-    UserRepository userRepository;
-    */
+    @Autowired
+    ArticleRepository articleRepository;
 
     @Override
     public void contribute(Info.Builder builder) {
-        Map<String, Integer> userDetails = new HashMap<>();
-        //userDetails.put("active", userRepository.countByStatus(1));
-        //userDetails.put("inactive", userRepository.countByStatus(0));
-        userDetails.put("active", 4);
-        userDetails.put("inactive", 6);
-        builder.withDetail("users", userDetails);
+        Map<String, Integer> articleDetails = new HashMap<>();
+        int articleCount = articleRepository.findAll().size();
+        articleDetails.put("total", articleCount);
+        articleDetails.put("active", 4);
+        articleDetails.put("inactive", 6);
+        builder.withDetail("articles", articleDetails);
     }
 }

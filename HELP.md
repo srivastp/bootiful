@@ -40,3 +40,28 @@ _id 'com.adarshr.test-logger' version '2.1.1'_
 
 ##ToDO
 * [Request List](https://courses.springframework.guru/p/ready-for-production-with-spring-boot-actuator)
+
+## APIs
+GET http://localhost:8080/articles
+GET http://localhost:8080/articles?startTime=15:10&endTime=20:00
+GET http://localhost:8080/articles?creationDateTime=03-15-2018
+GET http://localhost:8080/articles/1
+
+POST http://localhost:8080/articles
+{
+    "id": 6,
+    "publicationDate": "01-11-2018",
+    "publicationTime": "10:00:00",
+    "creationDateTime": "01-04-2018 17:30:00",
+    "title": "U.S Economy Is Improving Faster Than Expected, Budget Office Says"
+}
+
+PUT http://localhost:8080/articles/1
+{
+    "publicationDate": "01-11-2018",
+    "publicationTime": "10:00:00",
+    "creationDateTime": "01-04-2018 17:30:00",
+    "title": "U.S Economy Is Improving Faster Than Expected, Budget Office Says"
+}
+
+DELETE http://localhost:8080/articles/1

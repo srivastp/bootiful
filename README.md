@@ -6,3 +6,4 @@ Spring boot starter project
 ### H2 database and console
 ### Test-logger-plugin
 
+# Article Resource
