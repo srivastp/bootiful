@@ -2,6 +2,7 @@ package com.example.bootiful.article.web;
 
 import com.example.bootiful.article.domain.Article;
 import com.example.bootiful.article.service.ArticleService;
+import com.example.bootiful.article.web.dto.ArticleDto;
 import org.springframework.data.repository.query.Param;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
@@ -21,13 +22,13 @@ public class ArticleController {
     }
 
     @GetMapping("/articles")
-    public List<Article> getArticles(
+    public List<ArticleDto> getArticles(
             @Param("startTime") @DateTimeFormat(pattern = "HH:mm") Optional<Date> startTime,
             @Param("endTime") @DateTimeFormat(pattern = "HH:mm") Optional<Date> endTime,
             @Param("creationDateTime") @DateTimeFormat(pattern = "MM-dd-yyyy")
                     Optional<Date> creationDateTime
     ) {
-        List<Article> articles = new ArrayList<Article>();
+        List<ArticleDto> articles;
         if (creationDateTime.isPresent()) {
             articles = articleService.findAllWithCreationDateTimeAfter(creationDateTime.get());
         } else if (startTime.isPresent() && endTime.isPresent()) {
@@ -39,24 +40,24 @@ public class ArticleController {
     }
 
     @GetMapping("/articles/{articleId}")
-    public Optional<Article> getArticleById(@PathVariable("articleId") Integer articleId) {
-        Optional<Article> article = articleService.findArticleById(articleId);
+    public Optional<ArticleDto> getArticleById(@PathVariable("articleId") Integer articleId) {
+        Optional<ArticleDto> article = articleService.findArticleById(articleId);
         return article;
     }
 
     @PostMapping("/articles")
     @ResponseStatus(HttpStatus.CREATED)
-    public Article createArticle(@RequestBody Article article) {
-        Article newArticle = articleService.createArticle(article);
+    public ArticleDto createArticle(@RequestBody Article article) {
+        ArticleDto newArticle = articleService.createArticle(article);
         return newArticle;
     }
 
     @PutMapping("/articles/{articleId}")
     @ResponseStatus(HttpStatus.OK)
-    public Article updateArticle(
+    public ArticleDto updateArticle(
             @PathVariable("articleId") Integer articleId,
             @RequestBody Article article) {
-        Article updatedArticle = articleService.updateArticle(articleId, article);
+        ArticleDto updatedArticle = articleService.updateArticle(articleId, article);
         return updatedArticle;
     }
 

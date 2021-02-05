@@ -1,0 +1,8 @@
+@startuml
+ArticleComment }-- Article
+ArticleComment }-- Webuser
+ArticleRating }-- Article
+ArticleRating }-- Webuser
+Article }-- Author
+Author }-- Article
+@enduml

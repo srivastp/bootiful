@@ -35,19 +35,46 @@ _compile group: 'guru.springframework', name: 'chuck-norris-for-actuator', versi
 ** _Using Plugin:** id "com.gorylenko.gradle-git-properties" version "2.2.4"_ \
 ** _Actuator Class:** TotalUsersInfoContributor_
 
+## Test Plugin
 * [Test Logger Plugin](https://github.com/radarsh/gradle-test-logger-plugin) \
 _id 'com.adarshr.test-logger' version '2.1.1'_
 
-##ToDO
+
+
+## Enity Relationships and Associations
+* [Spring JPA - Many-To-Many](https://www.baeldung.com/spring-data-rest-relationships)
+* [JPA - Many-To-Many](https://www.baeldung.com/jpa-many-to-many)
+* [JPA - Many-To-Many Using Composite]()\
+Article-Authors
+* [JPA - Many-To-Many Using Composite Embedded](https://www.baeldung.com/spring-jpa-embedded-method-parameters) \
+Article-Rating-Webuser \
+Only 1 rating per (article_id/webuser_id) - Composite Key \
+  - User can post ONLY SINGLE rating per ArticleId/WebuserId
+* [JPA - Many-To-Many (As a seperate Entity)]     
+Article-Comment-WebUser \
+Can have m comments per (article_id/webuser_id) - 
+  - User can post MULTIPLE comments per ArticleId/WebuserId
+    
+
+####ToDo
+* Fix Cascade Delete \
+* Create REST interface \
+* Update REST interface
+* Using Profile
 * [Request List](https://courses.springframework.guru/p/ready-for-production-with-spring-boot-actuator)
 
-## APIs
-GET http://localhost:8080/articles
-GET http://localhost:8080/articles?startTime=15:10&endTime=20:00
-GET http://localhost:8080/articles?creationDateTime=03-15-2018
+#### APIs
+
+---
+GET http://localhost:8080/articles \
+GET http://localhost:8080/articles?startTime=15:10&endTime=20:00 \
+GET http://localhost:8080/articles?creationDateTime=03-15-2018 \
 GET http://localhost:8080/articles/1
 
-POST http://localhost:8080/articles
+---
+
+POST http://localhost:8080/articles \
+
 {
     "id": 6,
     "publicationDate": "01-11-2018",
@@ -56,12 +83,15 @@ POST http://localhost:8080/articles
     "title": "U.S Economy Is Improving Faster Than Expected, Budget Office Says"
 }
 
-PUT http://localhost:8080/articles/1
+PUT http://localhost:8080/articles/1 
+
 {
     "publicationDate": "01-11-2018",
     "publicationTime": "10:00:00",
     "creationDateTime": "01-04-2018 17:30:00",
     "title": "U.S Economy Is Improving Faster Than Expected, Budget Office Says"
 }
-
+---
 DELETE http://localhost:8080/articles/1
+
+---
