@@ -44,6 +44,9 @@ _id 'com.adarshr.test-logger' version '2.1.1'_
 ## Enity Relationships and Associations
 * [Spring JPA - Many-To-Many](https://www.baeldung.com/spring-data-rest-relationships)
 * [JPA - Many-To-Many](https://www.baeldung.com/jpa-many-to-many)
+* [Spring JPA-Embedded](https://www.baeldung.com/spring-jpa-embedded-method-parameters)  
+* [JPA-Embedded](https://www.baeldung.com/jpa-embedded-embeddable)  
+  
 * [JPA - Many-To-Many Using Composite]()\
 Article-Authors
 * [JPA - Many-To-Many Using Composite Embedded](https://www.baeldung.com/spring-jpa-embedded-method-parameters) \
@@ -62,6 +65,13 @@ Can have m comments per (article_id/webuser_id) -
 * Update REST interface
 * Using Profile
 * [Request List](https://courses.springframework.guru/p/ready-for-production-with-spring-boot-actuator)
+* Insert and Query (!HIGH)
+- Embeddable/EmbeddedId(Composite Key)
+  https://github.com/eugenp/tutorials/blob/master/persistence-modules/spring-jpa-2/src/test/java/com/baeldung/manytomany/ManyToManyIntegrationTest.java
+  
+https://github.com/eugenp/tutorials/blob/master/persistence-modules/spring-data-jpa-annotations/src/test/java/com/baeldung/composite/repository/BookRepositoryIntegrationTest.java
+- Embeddable/Embedded (Tag)
+https://github.com/eugenp/tutorials/blob/master/persistence-modules/spring-data-jpa-annotations/src/test/java/com/baeldung/embeddable/EmbeddableIntegrationTest.java
 
 #### APIs
 

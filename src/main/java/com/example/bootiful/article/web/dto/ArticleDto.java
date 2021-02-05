@@ -1,6 +1,7 @@
 package com.example.bootiful.article.web.dto;
 
 import com.example.bootiful.rating.domain.ArticleRating;
+import com.example.bootiful.tag.dao.Tag;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;
@@ -26,4 +27,5 @@ public class ArticleDto {
     List<String> authors;
     List<Integer> rating;
     List<String> comments;
+    Tag tag;
 }
